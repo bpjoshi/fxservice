@@ -1,0 +1,54 @@
+### Yml Configuration File. 
+
+spring.jmx:
+   enabled: false
+
+spring.datasource:
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:mem:bootexample;MODE=MySQL
+
+server:
+  port: 8999
+
+#Security disabled by default 
+security:
+  basic:
+    enabled: false
+
+#Management End Point to check App health
+management:
+  port: 8998
+  security:
+    enabled: false 
+
+#Other Configurations
+project:
+  name: fxservice
+  version: 0.1
+  description: REST API for FX Service
+info:
+  build:
+    artifact: ${project.artifactId}
+    name: ${project.name}
+    description: ${project.description}
+    version: ${project.version}
+
+fx.service:
+  name: 'default profile:'
+---
+spring:
+  profiles: test
+  h2:
+    console:
+      enabled: true
+
+spring.jpa:
+    hibernate.ddl-auto: create-drop
+
+fx.service:
+  name: 'test profile:'
+  
+logging:
+  file: fxservice.log
+  org.hibernate: INFO
+ 

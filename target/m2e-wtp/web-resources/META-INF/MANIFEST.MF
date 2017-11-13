@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Vendor: Pivotal Software, Inc.
+Implementation-Title: fxservice
+Implementation-Version: 0.1.0
+Implementation-Vendor-Id: com.bpjoshi.fxservice
+Build-Jdk: 1.6.0_26
+Built-By: bprasad
+Created-By: Maven Integration for Eclipse
+Implementation-URL: http://projects.spring.io/spring-boot/fxservice/
+Main-Class: com.bpjoshi.fxservice.FxserviceApplication
+

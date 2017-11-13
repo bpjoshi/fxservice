@@ -1,0 +1,17 @@
+{
+  "hints": [],
+  "properties": [
+    {
+      "sourceType": "com.bpjoshi.fxservice.service.FxServiceProperties",
+      "name": "fx.service.name",
+      "type": "java.lang.String"
+    }
+  ],
+  "groups": [
+    {
+      "sourceType": "com.bpjoshi.fxservice.service.FxServiceProperties",
+      "name": "fx.service",
+      "type": "com.bpjoshi.fxservice.service.FxServiceProperties"
+    }
+  ]
+}
